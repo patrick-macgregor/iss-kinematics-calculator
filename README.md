@@ -1,2 +1,2 @@
-# iss-kinematics-calculator
-A GUI for calculating kinematics using solenoidal spectrometers
+# ISS kinematics calculator
+A GUI for calculating kinematics in solenoidal spectrometers
