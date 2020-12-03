@@ -2,12 +2,13 @@
 CC := g++
 SRCDIR := src
 BUILDDIR := build
-TARGET := bin/iss_geometry
+TARGET := bin/iss_kinematics_calculator
 
 # Define objects
-OBJECTS := 	$(BUILDDIR)/IGMainFrame.o \
+OBJECTS := 	$(BUILDDIR)/IKCMainFrame.o \
 			$(BUILDDIR)/main.o \
-			$(BUILDDIR)/IGCanvas.o
+			$(BUILDDIR)/IKCCanvas.o
+
 CFLAGS := `root-config --cflags --glibs`
 INC := -I include
 
@@ -20,5 +21,6 @@ $(BUILDDIR)/%.o : $(SRCDIR)/%.cpp
 clean:
 	rm -f $(TARGET)
 	rm -f $(BUILDDIR)/*
+	rm -f bin/*
 
 .PHONY : clean

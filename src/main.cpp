@@ -1,7 +1,7 @@
 #include <TApplication.h>
 #include <iostream>
-#include "IGCanvas.h"
-#include "IGMainFrame.h"
+#include "IKCCanvas.h"
+#include "IKCMainFrame.h"
 
 
 int main( int argc, char** argv ){
@@ -9,7 +9,7 @@ int main( int argc, char** argv ){
 	TApplication ISS_GEOMETRY( "ISS_GEOMETRY", &argc, argv );
 
 	// Create a main frame which contains the window (width, height)
-	IGMainFrame* mf = CreateMainFrame( 800, 600 );
+	IKCMainFrame *mf = CreateMainFrame( 800, 600 );
 
 	// Run application
 	ISS_GEOMETRY.Run();
